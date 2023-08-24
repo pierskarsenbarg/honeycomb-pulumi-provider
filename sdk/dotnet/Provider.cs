@@ -15,6 +15,9 @@ namespace Pulumi.Honeycomb
         [Output("apikey")]
         public Output<string> Apikey { get; private set; } = null!;
 
+        [Output("version")]
+        public Output<string?> Version { get; private set; } = null!;
+
 
         /// <summary>
         /// Create a Provider resource with the given unique name, arguments, and options.
@@ -45,6 +48,9 @@ namespace Pulumi.Honeycomb
     {
         [Input("apikey", required: true)]
         public Input<string> Apikey { get; set; } = null!;
+
+        [Input("version")]
+        public Input<string>? Version { get; set; }
 
         public ProviderArgs()
         {

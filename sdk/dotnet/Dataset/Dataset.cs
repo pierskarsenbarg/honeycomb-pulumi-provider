@@ -75,9 +75,6 @@ namespace Pulumi.Honeycomb.Dataset
         [Input("description", required: true)]
         public Input<string> Description { get; set; } = null!;
 
-        [Input("expand_json_depth", required: true)]
-        public Input<int> Expand_json_depth { get; set; } = null!;
-
         [Input("name", required: true)]
         public Input<string> Name { get; set; } = null!;
 
